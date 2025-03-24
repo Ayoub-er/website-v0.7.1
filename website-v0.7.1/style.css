@@ -1,0 +1,500 @@
+
+    /* General Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+      
+      /* Header */
+      header {
+        background-color: #003366; /* Dark blue */
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      
+      header nav {
+        margin-top: 10px;
+      }
+      
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.1rem;
+      }
+      
+      header nav a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Container */
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      
+      /* Buttons */
+      button {
+        background-color: #003366; /* Dark blue */
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      
+      button:hover {
+        background-color: #002244; /* Darker blue */
+      }
+      
+      /* Forms */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      form label {
+        font-weight: bold;
+      }
+      
+      form input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      
+      form input:focus {
+        border-color: #003366;
+        outline: none;
+      }
+      
+      /* Boards and Cards */
+      .boards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      
+      .board-card {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .board-card h3 {
+        margin: 0 0 10px;
+        font-size: 1.5rem;
+      }
+      
+      .board-card p {
+        margin: 0;
+        color: #666;
+      }
+      
+      .board-card a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #003366;
+        text-decoration: none;
+      }
+      
+      .board-card a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Lists and Cards */
+      .lists {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .list {
+        background-color: #f1f1f1;
+        padding: 15px;
+        border-radius: 8px;
+        width: 250px;
+      }
+      
+      .list h3 {
+        margin: 0 0 10px;
+        font-size: 1.2rem;
+      }
+      
+      .card {
+        background-color: #fff;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      
+      .card h4 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+      
+      .card p {
+        margin: 5px 0;
+        color: #666;
+      }
+      
+      .card button {
+        background-color: #003366;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
+      
+      .card button:hover {
+        background-color: #002244;
+      }
+    
+    
+        /* General layout */
+        body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          height: 100vh;
+          font-family: Arial, sans-serif;
+        }
+    
+        /* Sidebar */
+        .sidebar {
+          width: 250px;
+          background-color: #003366; /* Nouvelle couleur */
+          padding: 20px;
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+          color: white; /* Pour que le texte soit lisible sur fond sombre */
+        }
+    
+        .sidebar h2 {
+          margin-top: 0;
+        }
+    
+        .sidebar ul {
+          list-style: none;
+          padding: 0;
+        }
+    
+        .sidebar ul li {
+          margin-bottom: 10px;
+        }
+    
+        .sidebar ul li a {
+          text-decoration: none;
+          color: white; /* Texte en blanc */
+          font-size: 16px;
+        }
+    
+        .sidebar ul li a:hover {
+          color: #cccccc; /* Couleur au survol */
+        }
+    
+        /* Bouton "Nouveau Projet" */
+        #add-project {
+          background-color: #002244; /* Couleur du bouton */
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 20px;
+          width: 100%;
+        }
+    
+        #add-project:hover {
+          background-color: #001122; /* Couleur au survol */
+        }
+    
+        /* Dashboard */
+        .dashboard {
+          flex: 1;
+          padding: 20px;
+          overflow-y: auto;
+        }
+    
+        /* Existing dashboard styles */
+        .boards-container {
+          display: flex;
+          gap: 20px;
+          margin-top: 20px;
+        }
+    
+        .board-section {
+          flex: 1;
+          background-color: #f9f9f9;
+          padding: 15px;
+          border-radius: 8px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .board-section h3 {
+          margin-top: 0;
+        }
+    
+        .board-card {
+          background-color: #fff;
+          padding: 15px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          cursor: grab;
+          position: relative;
+        }
+    
+        .board-card:active {
+          cursor: grabbing;
+        }
+    
+        .board-card.Important_et_urgent { background-color: #FFCCCC; }
+        .board-card.Urgent_mais_non_important { background-color: #FFD699; }
+        .board-card.Important_mais_non_urgent { background-color: #FFFF99; }
+        .board-card.Non_urgent_et_non_important { background-color: #CCFFCC; }
+    
+        .board-card h3 {
+          color: #000;
+        }
+    
+        .exclamation-icon {
+          position: absolute;
+          bottom: 5px;
+          right: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          color: #333;
+        }
+    
+        .board-actions {
+          display: none;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+        }
+    
+        .board-card:hover .board-actions {
+          display: block;
+        }
+    
+        .board-actions button {
+          background-color: #003366;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 3px;
+          cursor: pointer;
+          margin-left: 5px;
+        }
+    
+        .board-actions button:hover {
+          background-color: #002244;
+        }
+    
+        .add-board-form {
+          margin-top: 20px;
+        }
+    
+        .add-board-form input {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+          margin-right: 10px;
+        }
+    
+        .add-board-form select {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+          margin-right: 10px;
+        }
+    
+        .add-board-form button {
+          background-color: #003366;
+          color: #fff;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .add-board-form button:hover {
+          background-color: #002244;
+        }
+    
+        .color-change-button {
+          margin-top: 20px;
+          background-color: #003366;
+          color: #fff;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .color-change-button:hover {
+          background-color: #002244;
+        }
+    
+        .comments-section  {
+          margin-top: 20px;
+          padding: 15px;
+          background-color: #f9f9f9;
+          border-radius: 8px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .comments-section h3 {
+          margin-top: 0;
+        }
+    
+        .comments-section textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+          margin-bottom: 10px;
+        }
+    
+        .comments-section button {
+          background-color: #003366;
+          color: #fff;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .comments-section button:hover {
+          background-color: #002244;
+        }
+    
+        .comment {
+          background-color: #fff;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .Inviter_profils {
+          margin-top: 20px;
+          padding: 15px;
+          background-color: #f9f9f9;
+          border-radius: 8px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Styles pour le formulaire d'ajout de projet */
+    #add-project-form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    #add-project-form input,
+    #add-project-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    #add-project-form input::placeholder,
+    #add-project-form textarea::placeholder {
+      color: #999;
+    }
+    
+    #add-project-form textarea {
+      resize: vertical; /* Permet à l'utilisateur de redimensionner verticalement */
+      min-height: 80px;
+    }
+    
+    #add-project-form button {
+      background-color: #002244; /* Couleur du bouton */
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+    
+    #add-project-form button:hover {
+      background-color: #001122; /* Couleur au survol */
+    }
+    
+    /* Style de base pour le bouton Supprimer */
+    .sidebar ul li button {
+        background-color: #ff4d4d; /* Couleur de fond rouge */
+        color: white; /* Texte en blanc */
+        border: none; /* Pas de bordure */
+        padding: 5px 10px; /* Espacement intérieur */
+        border-radius: 5px; /* Coins arrondis */
+        cursor: pointer; /* Curseur en forme de main */
+        font-size: 12px; /* Taille de police */
+        margin-left: 10px; /* Marge à gauche pour l'espacement */
+        transition: background-color 0.3s ease; /* Transition fluide */
+    }
+    
+    /* Effet au survol */
+    .sidebar ul li button:hover {
+        background-color: #cc0000; /* Couleur de fond plus foncée au survol */
+    }
+    
+    /* Effet au clic */
+    .sidebar ul li button:active {
+        background-color: #990000; /* Couleur de fond encore plus foncée au clic */
+    }
+    
+    
+    .error-message {
+        background-color: #ffcccc;
+        color: #cc0000;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .success-message {
+        background-color: #ccffcc;
+        color: #006600;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .positionm {
+      position: absolute;
+      top: 520px;
+      left: 20px;
+    }
+    
